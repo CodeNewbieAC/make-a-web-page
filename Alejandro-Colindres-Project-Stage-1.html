@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Alejandro's Notes for IPND</title>
+    <link rel="stylesheet" type="text/css" href="Alejandro-Colindres-Project-Stage-1.css">
+ 
+</head>
+<body>
+	<article>
+	<!-- learned the new article and section tags ; hope I used them correctly --> 
+		<h1>Alejandro's Notes for IPND</h1>
+		<section class="TOC">
+		<!-- Took the idea of a TOC from Andys example -->
+			<h2>Table of Contents</h2>
+			<!-- Did a little research on ol , li and ul tags 
+			ol is an ordered list , ul is unordered and li is a element of the list-->
+			<ol>
+				<li><a href="#lesson-1">Lesson 1: Basics of Web and HTML</a>
+				<!-- # symbol , signals the Link to an element with a specified id within the page  -->
+					<ol>
+						<li><a href="#lesson-1-1">How the Web Works</a></li>
+						<li><a href="#lesson-1-2">HTML</a></li>
+						<li><a href="#lesson-1-3">HTML Vocabulary</a></li>
+						<li><a href="#lesson-1-4">Computers are Stupid!</a></li>
+					</ol>
+				</li>
+				<li><a href="#lesson-2">Lesson 2. Creating a Structured Document</a>
+					<ol>
+						<li><a href="#lesson-2-1">Dev Tools</a></li>
+						<li><a href="#lesson-2-2">Document Object Model</a></li>
+						<li><a href="#lesson-2-3">HTML and Boxes</a></li>
+						<li><a href="#lesson-2-4">Text Editors</a></li>
+					</ol>
+				</li>	
+
+				<li><a href="#lesson-3">Lesson 3: CSS Style and HTML Structure</a>
+					<ol>
+						<li><a href="#lesson-3-1">CSS</a></li>
+						<li><a href="#lesson-3-2">Avoiding Repetition</a></li>
+						<li><a href="#lesson-3-3">Don't Forget!</a></li>
+					</ol>
+				</li>
+			</ol>			
+		</section>	
+		<section class="primeraseccion">
+			<h2>Intro to Programming Nanodegree Concepts</h2>
+			<section class="lesson">	
+				<h3 id="lesson-1"> Lesson 1. Basics of Web and HTML </h3>
+				<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-1-1">How the Web Works</h4>
+					</div>	
+					<div class="concept-content">
+						<p>People use- <span class="concept-remark">Computers and Browsers</span> - which connect to servers via- <span class="concept-remark">Internet</span>- which uses <span class="concept-remark">http</span> to communicate with- <span class="concept-remark">Servers</span> - They respond sending documents for the <span class="concept-remark">Browser</span> to interpret.</p>
+					  	<p><b>This diagram explains it much better!!</b>
+                            <br>
+                            <br>
+						<img class="alineacion" src="http://fc07.deviantart.net/fs71/f/2010/126/c/1/Internet_Diagram_by_Wes2299.jpg" alt="How The Internet Works" width="550" height="480">
+						<!-- can set images's width and height directly in html or in css -->
+						</p>
+					</div>	
+				</div>		
+				<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-1-2">HTML</h4>
+					</div>
+					<div class="concept-content">
+						<p><span class="concept-remark">HyperText Markup Language</span> (<b>HTML</b>) is the standard language used to create web pages. Most of the web is based on this language.</p>
+						<p><span class="concept-remark">HTML</span> is made up of:</p>
+				  		<ol>
+				  			<li><em>Text content</em></li>
+				  			<li><em>Markup</em>(for edition)</li>
+				  			<li><em>References to other documents</em>(images or videos)</li>
+				  			<li><em>Links</em></li>
+				  		</ol>	
+					</div>
+				</div>
+				<div class="concept">	
+					<div class="concept-title">
+						<h4 id="lesson-1-3">HTML Vocabulary</h4>
+					</div>
+					<div class="concept-content">
+						<p>HTML documents are made of HTML <span class="concept-remark">elements</span>. The types of <span class="concept-remark">elements</span> are characterized by using HTML <span class="concept-remark">Tags</span>.
+						</p>
+						<ul>
+                            <li><b>Tags</b>:They are used for holding content. An HTML tag is always contained within angled brackets. Most tags have an opening tag <code>&lt;&gt;</code> and a closing one <code>&lt;/&gt;</code>, but some just have an opening one, this are called void tags.</li>
+				        	<li><b>Element</b>: An HTML element refers to everything within a set of opening and closing tags.</li>
+				        	<li><b>Attributes</b>: These are the properties of an HTML element.</li>
+				        	<!-- &lt and &gt are equivalent to < and > -->
+				        </ul>	
+		       		</div>
+		       	</div>		
+			    <div class="concept">	
+					<div class="concept-title">
+						<h4 id="lesson-1-4">Computers are Stupid!</h4>
+					</div>
+					<div class="concept-content">
+						<p>Computers are stupid because they interpret instructions literally.Any instructions to a computer must be precise or they will fail to do what you have intended to.</p>
+					</div> 
+				</div>
+			</section>			
+			<section class="lesson">
+				<h3 id="lesson-2"> Lesson 2. Creating a Structured Document </h3>
+				<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-2-1">Dev Tools</h4>
+					</div>
+					<div class="concept-content">
+		       			<p>Web development tools allow web developers to test and debug their code. You can acces it by clicking <span class="concept-remark">Ctrl+Shift+I</span> while using google chrome.</p>
+		       			<p>It allows you to work with a variety of languages including HTML, CSS, DOM, JavaScript, and others handled by the web browser.</p>
+		       		</div>
+		       	</div>
+		       	<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-2-2">Document Object Model <b>DOM</b></h4>
+					</div>
+					<div class="concept-content">	
+		       			<p><span class="concept-remark">DOM</span> is used for representing and interacting with objects in HTML. The nodes of every document are organized in a tree structure, called the DOM tree.</p>
+		       		</div>
+		       	</div>	
+		       	<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-2-3">HTML and <b>Boxes</b></h4>
+					</div>
+					<div class="concept-content">		
+		       			<p>All HTML elements can be considered as boxes.Essentially every element has a box that wraps around it. This helps when organizing the layout of your webpage.</p>
+		       		</div>	
+		       	</div>
+		       	<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-2-4">Text Editors</h4>
+					</div>
+					<div class="concept-content">
+		       			<p>Its a type program used for editing code.My favorite one to use its <a href="http://www.sublimetext.com/"> Sublime <br><img src="http://upload.wikimedia.org/wikipedia/en/4/4c/Sublime_Text_Logo.png" alt="Sublime Text" height="165" width="145"></a>
+		       			</p>
+		       		</div>	 		
+				</div>
+			</section>
+			<section class="lesson">
+			 <h3 id="lesson-3"> Lesson 3: CSS Style and HTML Structure </h3>
+			 	<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-3-1">CSS</h4>
+					</div>
+					<div class="concept-content">
+						<p><span class="concept-remark">Cascading Style Sheets </span> (CSS) is used for setting the looks and format of a <span class="concept-remark">HTML</span> document.</p>
+						<p> With CSS you can separte the document content from the document presentation. This helps avoiding repetition since it can easily apply similar elements with similar format.This is done by giving similar<span class="concept-remark"> HTML</span> elements the same class name and then specifying the style that should apply to that class.</p>
+					</div>
+				</div>
+				<div class="concept">
+					<div class="concept-title">
+						<h4 id="lesson-3-2">Avoid repetition</h4>
+					</div>
+					<div class="concept-content">
+						<p> Remember to avoid repetition. By avoiding it you avoid <b> Copying and Pasting </b> style attributes to elements which can lead to errors.</p>
+						<p>You also achieve consistency by having similar <span class="concept-remark">HTML</span> elements show the same style.</p> 
+					</div>
+				</div>		
+				<div class="concept">
+				
+                    <div class="concept-title">
+						<h4 id="lesson-3-3">Don't Forget!</h4>
+					</div>
+					<div class="concept-content">
+						<p>Remember to link your <span class="concept-remark">HTML</span> to a separate <span class="concept-remark">CSS</span> file </p>
+						<p>Do this by:</p>
+							<ol>
+							<li>Write all your <span class="concept-remark">HTML</span> in one file.</li>
+							<li>Write all your <span class="concept-remark">CSS</span> in another file.</li> 
+							<li>Add a <code>&lt;head&gt;</code> element to the top of the <span class="concept-remark">HTML</span> document</li>
+                                <li>Add a <code> &lt;link&gt; </code> tag inside the <code>&lt;head&gt;</code> tag, containing the attributes <code>rel="stylesheet"</code> <code>type="text/css"</code> <code>href="YOURFILENAME.css"</code></li>
+							</ol>
+					</div>
+				</div>		
+			</section>
+		</section>		
+	</article>	       	
+</body>
